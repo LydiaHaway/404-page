@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "spectral";
+  src: url(./asset/SpectralSC-Regular.ttf);
+}
+
+body {
+  background: url(./asset/pexels-photo-2902541.webp) center/cover no-repeat;
+  min-height: 100vh;
+  font-family: "spectral";
+}
+
+* {
+  color: azure;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-top: 5%;
+}
+
+p {
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 5%;
+  padding: 15px;
+  background-color: rgba(240, 248, 255, 0);
+  border: 2px solid rgb(0, 255, 55);
+  border-radius: 30px;
+  box-shadow: 2px 1px 20px 5px rgb(0, 255, 55);
+  transition: 1s;
+}
+
+button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(0, 255, 55);
+}
+
+@keyframes borderAnimation {
+  0% {
+    padding: 15px;
+    box-shadow: 2px 1px 20px 5px rgb(0, 255, 55);
+  }
+
+  25% {
+    padding: 20px;
+    box-shadow: 2px 1px 20px 7px rgb(0, 255, 55);
+  }
+
+  50% {
+    padding: 25px;
+    box-shadow: 2px 1px 20px 9px rgb(0, 255, 55);
+  }
+
+  75% {
+    padding: 20px;
+    box-shadow: 2px 1px 20px 7px rgb(0, 255, 55);
+  }
+}
+
+button:hover {
+  animation: borderAnimation 2s linear infinite;
+}
